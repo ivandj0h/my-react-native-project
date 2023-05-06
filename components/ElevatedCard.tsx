@@ -22,7 +22,7 @@ export default function ElevatedCard(): JSX.Element {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 8,
+    paddingHorizontal: 7,
   },
   headingText: {
     fontSize: 24,

@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'row', // row, column, row-reverse, column-reverse (default: column) (left to right)
-    padding: 8,
+    paddingHorizontal: 7,
   },
   headingText: {
     fontSize: 24,

@@ -7,13 +7,10 @@ export default function FlatCards(): JSX.Element {
       <Text style={styles.headingText}>Flat Cards</Text>
       <View style={styles.container}>
         <View style={[styles.card, styles.cardOne]}>
-          <Text>Card 1</Text>
+          <Text style={[styles.cardTextWhite]}>Card 1</Text>
         </View>
         <View style={[styles.card, styles.cardTwo]}>
-          <Text>Card 2</Text>
-        </View>
-        <View style={[styles.card, styles.cardThree]}>
-          <Text>Card 3</Text>
+          <Text style={[styles.cardTextBlue]}>Card 2</Text>
         </View>
       </View>
     </View>
@@ -36,16 +33,19 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     height: 100,
     width: 100,
-    borderRadius: 7,
+    borderRadius: 2,
     margin: 4,
   },
   cardOne: {
-    backgroundColor: '#f1c40f',
+    backgroundColor: '#005bbb',
   },
   cardTwo: {
-    backgroundColor: '#c0392b',
+    backgroundColor: '#ffd500',
   },
-  cardThree: {
-    backgroundColor: '#16a085',
+  cardTextWhite: {
+    color: '#fff',
+  },
+  cardTextBlue: {
+    color: '#001891',
   },
 });

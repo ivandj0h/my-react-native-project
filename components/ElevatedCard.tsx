@@ -7,13 +7,13 @@ export default function ElevatedCard(): JSX.Element {
       <Text style={styles.headingText}>Elevated Cards</Text>
       <ScrollView horizontal={true}>
         <View style={[styles.card, styles.cardElevated]}>
-          <Text style={styles.cardText}>Tap here</Text>
+          <Text style={styles.cardTextWhite}>Tap here</Text>
         </View>
         <View style={[styles.card, styles.cardElevated]}>
-          <Text style={styles.cardText}>Tap here</Text>
+          <Text style={styles.cardTextWhite}>Tap here</Text>
         </View>
         <View style={[styles.card, styles.cardElevated]}>
-          <Text style={styles.cardText}>Tap here</Text>
+          <Text style={styles.cardTextWhite}>Tap here</Text>
         </View>
       </ScrollView>
     </View>
@@ -38,9 +38,18 @@ const styles = StyleSheet.create({
     margin: 4,
   },
   cardElevated: {
-    backgroundColor: '#c0392b',
+    backgroundColor: '#001891',
+    elevation: 10,
+    shadowOffset: {
+      width: 1,
+      height: 1,
+    },
+    shadowColor: '#ef5354',
   },
-  cardText: {
+  cardTextWhite: {
     color: '#fff',
-  }
+  },
+  cardTextBlue: {
+    color: '#001891',
+  },
 });

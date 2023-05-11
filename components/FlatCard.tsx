@@ -4,16 +4,19 @@ import {Text, View, StyleSheet} from 'react-native';
 export default function FlatCard(): React.JSX.Element {
   return (
     <View>
-      <Text style={styles.headingText}>FlatComponent</Text>
+      <Text style={styles.headingText}>My Native Project</Text>
+      <View style={styles.container}>
+        <Text style={styles.headingText}>FlatCard</Text>
+      </View>
       <View style={styles.container}>
         <View style={[styles.card, styles.cardOne]}>
-          <Text style={styles.headingText}>Card One</Text>
+          <Text style={styles.cardText}>Card One</Text>
         </View>
         <View style={[styles.card, styles.cardTwo]}>
-          <Text style={styles.headingText}>Card Two</Text>
+          <Text style={styles.cardText}>Card Two</Text>
         </View>
         <View style={[styles.card, styles.cardThree]}>
-          <Text style={styles.headingText}>Card Two</Text>
+          <Text style={styles.cardText}>Card Three</Text>
         </View>
       </View>
     </View>
@@ -22,16 +25,15 @@ export default function FlatCard(): React.JSX.Element {
 
 const styles = StyleSheet.create({
   headingText: {
-    color: '#fff',
+    color: '#0057b7',
     fontSize: 20,
     fontWeight: 'bold',
-    paddingHorizontal: 10,
+    padding: 10,
   },
   container: {
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-      padding: 10,
   },
   card: {
     flex: 1,
@@ -39,16 +41,19 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     width: 100,
     height: 100,
-    borderRadius: 3,
-    margin: 10,
+    borderRadius: 7,
+    margin: 8,
   },
   cardOne: {
-    backgroundColor: '#000',
+    backgroundColor: '#000000',
   },
   cardTwo: {
-    backgroundColor: 'blue',
+    backgroundColor: '#0057b7',
   },
   cardThree: {
-    backgroundColor: 'orange',
+    backgroundColor: '#ffd700',
+  },
+  cardText: {
+    color: '#ffffff',
   },
 });

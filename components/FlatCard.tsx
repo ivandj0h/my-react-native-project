@@ -24,16 +24,16 @@ export default function FlatCard(): React.JSX.Element {
 }
 
 const styles = StyleSheet.create({
-  headingText: {
-    color: '#0057b7',
-    fontSize: 20,
-    fontWeight: 'bold',
-    padding: 10,
-  },
   container: {
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
+  },
+  headingText: {
+    color: '#0C134F',
+    fontSize: 20,
+    fontWeight: 'bold',
+    padding: 10,
   },
   card: {
     flex: 1,

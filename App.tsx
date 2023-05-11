@@ -1,12 +1,13 @@
 import React from 'react';
-import {View, Text, SafeAreaView} from 'react-native';
+import {SafeAreaView, ScrollView} from 'react-native';
+import FlatCard from './components/FlatCard';
 
-export default function App() {
+export default function App(): React.JSX.Element {
   return (
     <SafeAreaView>
-      <View>
-        <Text>App</Text>
-      </View>
+      <ScrollView>
+        <FlatCard />
+      </ScrollView>
     </SafeAreaView>
   );
 }

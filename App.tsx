@@ -1,14 +1,24 @@
 import React from 'react';
-import {SafeAreaView, ScrollView} from 'react-native';
+import {SafeAreaView, ScrollView, StyleSheet} from 'react-native';
 
 import TopNavigation from './components/TopNavigation';
+import BoxHero from './components/BoxHero';
 
-export default function App(): React.JSX.Element {
+const App: React.FC = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
       <ScrollView>
         <TopNavigation />
+        <BoxHero />
       </ScrollView>
     </SafeAreaView>
   );
-}
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
+
+export default App;

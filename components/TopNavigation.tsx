@@ -3,8 +3,9 @@ import {Image, StyleSheet, Text, TextInput, View} from 'react-native';
 // @ts-ignore
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-const TopNavigation = (): React.JSX.Element => {
+const TopNavigation: React.FC = (): React.ReactElement => {
   const [text, setText] = useState<string>('');
+
   return (
     <View style={styles.container}>
       <View style={styles.inputContainer}>

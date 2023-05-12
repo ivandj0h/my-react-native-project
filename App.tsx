@@ -1,14 +1,13 @@
 import React from 'react';
 import {SafeAreaView, ScrollView} from 'react-native';
-import FlatCard from './components/FlatCard';
-import ElevatedCard from './components/ElevatedCard';
+
+import TopNavigation from './components/TopNavigation';
 
 export default function App(): React.JSX.Element {
   return (
     <SafeAreaView>
       <ScrollView>
-        <FlatCard />
-        <ElevatedCard />
+        <TopNavigation />
       </ScrollView>
     </SafeAreaView>
   );

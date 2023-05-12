@@ -10,8 +10,17 @@
     "test": "jest"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-native-fontawesome": "^0.3.0",
+    "@react-native-community/slider": "^4.4.2",
+    "humps": "^2.0.1",
     "react": "18.2.0",
     "react-native": "0.71.8",
+    "react-native-linear-gradient": "^2.6.2",
+    "react-native-svg": "^13.9.0",
+    "react-native-swiper": "^1.6.0",
+    "react-native-swiper-flatlist": "^3.2.2",
     "react-native-vector-icons": "^9.2.0"
   },
   "devDependencies": {

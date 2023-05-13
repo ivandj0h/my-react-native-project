@@ -1,10 +1,9 @@
 import React from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import {View, StyleSheet, Text, Image} from 'react-native';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {
-  faCirclePlus, faHome,
+  faCirclePlus,
   faRocket,
-  faRupiahSign,
   faWallet,
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -18,10 +17,16 @@ const BoxHero: React.FC = () => {
             flex: 1,
             backgroundColor: '#FFD6EC',
             borderRightWidth: 1,
-            borderColor: '#FF6D60',
+            borderColor: '#fff',
+            borderTopLeftRadius: 10,
+            borderBottomLeftRadius: 10,
           },
         ]}>
-        <FontAwesomeIcon icon={faRupiahSign} size={32} color="#FF6D60" />
+        {/*<Text style={styles.iconTextBold}>IDPay</Text>*/}
+        <Image
+          source={require('../readme_assets/img/food_1.png')}
+          style={{width: 100, height: 100}}
+        />
       </View>
       <View
         style={[
@@ -43,7 +48,7 @@ const BoxHero: React.FC = () => {
             color="#FF6D60"
             style={styles.icon}
           />
-          <Text style={styles.iconText}>Pay</Text>
+          <Text style={styles.iconText}>Pays</Text>
         </View>
         <View style={styles.iconContainer}>
           <FontAwesomeIcon
@@ -95,6 +100,11 @@ const styles = StyleSheet.create({
     color: '#FF6D60',
     marginTop: 5,
     textAlign: 'center',
+  },
+  iconTextBold: {
+    color: '#FF6D60',
+    fontWeight: 'bold',
+    fontSize: 30,
   },
 });
 

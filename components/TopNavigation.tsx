@@ -17,7 +17,7 @@ const TopNavigation: React.FC = (): React.ReactElement => {
             style={styles.input}
             value={text}
             onChangeText={setText}
-            placeholder="Type here..."
+            placeholder="Find services, food, or places"
           />
         </View>
         <Image
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flex: 1,
     backgroundColor: '#fff',
-    borderRadius: 10,
+    borderRadius: 100,
   },
   input: {
     height: 40,
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     flex: 1,
     backgroundColor: '#fff',
-    borderRadius: 10,
+    borderRadius: 100,
   },
   profileContainer: {
     flexDirection: 'row',

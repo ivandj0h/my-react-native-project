@@ -3,6 +3,7 @@ import {SafeAreaView, ScrollView, StyleSheet} from 'react-native';
 
 import TopNavigation from './components/TopNavigation';
 import BoxHero from './components/BoxHero';
+import BoxImageComponent from './components/BoxImageComponent';
 
 const App: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const App: React.FC = () => {
       <ScrollView>
         <TopNavigation />
         <BoxHero />
+        <BoxImageComponent />
       </ScrollView>
     </SafeAreaView>
   );

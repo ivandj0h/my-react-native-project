@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 
 const BoxImageComponent: React.FC = () => {
   return (
@@ -24,7 +24,11 @@ const BoxImageComponent: React.FC = () => {
           />
         </View>
       </View>
-      <Text>Food 1</Text>
+      <View style={styles.buttonWrapper}>
+        <TouchableOpacity style={styles.boxButton}>
+          <Text style={{fontSize: 15, color: '#fff', textAlign: 'center'}}>Button</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
@@ -46,6 +50,18 @@ const styles = StyleSheet.create({
     borderColor: '#ddd',
     borderRadius: 10,
     margin: 10,
+  },
+  buttonWrapper: {
+    padding: 10,
+    width: 100,
+  },
+  boxButton: {
+    backgroundColor: '#FF6D60',
+    marginHorizontal: 10,
+    marginTop: 2,
+    borderRadius: 10,
+    elevation: 5,
+    paddingVertical: 10,
   },
 });
 
